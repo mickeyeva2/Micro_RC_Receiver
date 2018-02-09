@@ -1,13 +1,13 @@
-# This is an ATMEL Mega328P / NRF24L01+ based 2.4GHz radio receiver
-## Features:
-- Programmable with Arduino IDE
-- 4 RC servo connectors
-- integrated TB6612FNG dual dc motor driver
-- serial header
-- I2C header (for example for the supported MPU-6050)
-- ICSP header for programming with Arduino IDE (use "TheDIYGuy999 328P" board definition and set brownout voltage to 1.8V)
-- NRF24L01+ SMD module integrated
-- very small size
+# 这是ATMEL 基于ATmega328P和NRF24L01无线模块的遥控接收机
+## 特性:
+- 可使用Arduino IDE编程
+- 四通道PWM输出（可在设定文件内更改输模式）
+- 内置TB6612FNG双直流电机驱动芯片
+- 串口输出接口
+- I2C 接口 (支持MPU-6050)
+- ICSP 接口 for programming with Arduino IDE (use "TheDIYGuy999 328P" board definition and set brownout voltage to 1.8V)
+- 内置贴片NRF24L01
+- 尺寸38*26mm（不计贴片无线模块天线部分）
 - Eagle files are also provided, if you want to build your own receiver!
 
 See: https://www.youtube.com/playlist?list=PLGO5EJJClJBCjIvu8frS7LrEU3H2Yz_so
