@@ -793,9 +793,10 @@ float batteryAverage() {
   raw[3] = raw[2];
   raw[2] = raw[1];
   raw[1] = raw[0];
-  if (isDriving) raw[0] = (analogRead(BATTERY_DETECT_PIN) + 31); // add 0.3V while driving: 1023 steps * 0.3V / 9.9V = 31
+  if (isDriving) raw[0] = (analogRead(BATTERY_DETECT_PIN) + 20); // add 0.3V while driving: 1023 steps * 0.3V / 9.9V = 31
+                                                                  // change 20 for 5V16MHz ProMINI
   else raw[0] = analogRead(BATTERY_DETECT_PIN); // else take the real voltage (compensates voltage drop while driving)
-  float average = (raw[0] + raw[1] + raw[2] + raw[3] + raw[4] + raw[5]) / 619.999; // 1023steps / 9.9V * 6 = 619.999
+  float average = (raw[0] + raw[1] + raw[2] + raw[3] + raw[4] + raw[5]) / 409.2; // 1023steps / 9.9V * 6 = 619.999
   return average;
 }
 
