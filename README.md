@@ -1,4 +1,4 @@
-# 这是ATMEL 基于ATmega328P和NRF24L01无线模块的遥控接收机
+# 基于ATmega328P和NRF24L01无线模块的接收机
 ## 特性:
 - 可使用Arduino IDE编程
 - 四通道PWM输出（可在设定文件内更改输模式）
